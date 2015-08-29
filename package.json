@@ -1,0 +1,19 @@
+{
+  "name": "YAE-gulp",
+  "version": "1.0.0",
+  "description": "YAE frontend standard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keller35/YAE-frontend"
+  },
+  "author": "keller35",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keller35/YAE-frontend/issues"
+  },
+  "homepage": "https://github.com/keller35/YAE-frontend"
+}
