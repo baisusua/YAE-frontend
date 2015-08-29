@@ -1,0 +1,6 @@
+{
+  "eqeqeq"      :     true,     //必须使用严格相等
+  "camelcase"   :     true,     //严格使用驼峰变量名
+  "noempty"     :     true,     //禁止空代码块
+  "unused"      :     true      //禁止定义变量却不使用
+}
