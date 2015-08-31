@@ -1,7 +1,14 @@
+//var process = require('process');
 /*
- * index.js
  * 返回较大值
  * */
-module.exports = function f(x, y){
+exports.bigger = function bigger(x, y){
     return x > y ? x : y;
+};
+
+/*
+* 异步函数
+* */
+exports.asyncfun = function asyncfun(callback){
+    process.nextTick(callback);
 };

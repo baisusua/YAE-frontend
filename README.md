@@ -1,5 +1,5 @@
 # YAE-frontend
-standard of YAE frontend development
+standard of frontend development
 
 ## HTML规范：
 1、标签名必须使用小写字母；
@@ -39,16 +39,23 @@ standard of YAE frontend development
 
 [更多css规范](http://segmentfault.com/a/1190000002460968)
 
-## mocha规范：
+## mocha测试规范：
+1、对于各自编写的模块，应尽量编写测试代码。代码测试不仅能测试代码正确性，还能模拟边界条件，保证代码健壮性；
+
+2、测试可基于BDD（行为驱动开发）或TDD（测试驱动开发），关于BDD&TDD可见 [BDD&TDD](http://www.cnblogs.com/wangshenhe/archive/2013/02/16/2913431.html)
+
+3、测试代码必须放于/test目录，路径形式和文件名尽量与被测试文件相同
+
+4、更多 [mocha api](http://mochajs.org/)
 
 ## gulp规范:
 
-### gulp使用帮助：
+##### gulp使用帮助：
 1、尽量使用gulp完成自动化操作；
 
 2、在完成各自开发任务的过程中，请配置自己的gulp任务，文件导入避免使用通配符，以避免影响其他人的开发文件
 
-### gulp任务帮助：
+##### gulp任务帮助：
 1、less编译、压缩和合并，参见 task 'less'
 
 2、代码语法检查，参见 task 'jshint'

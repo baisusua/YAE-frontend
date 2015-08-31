@@ -29,7 +29,7 @@ gulp.task('jshint', function () {
 
 //代码测试
 gulp.task('mocha', function(){
-    return gulp.src("test/test.js", {read: false})
+    return gulp.src("test/*.js", {read: false})
         .pipe(cover.instrument({
             pattern: ['**/test*'],
             debugDirectory: 'debug'
