@@ -3,11 +3,12 @@ standard of YAE frontend development
 
 ## HTML规范：
 1、标签名必须使用小写字母；
-属性名必须使用小写字母，属性值必须用双引号包围；
 
-2、HTML 标签的使用应该遵循标签的语义
+2、属性名必须使用小写字母，属性值必须用双引号包围；
 
-3、禁止为了 hook 脚本，创建无样式信息的 class，使用 id、属性选择作为 hook 是更好的方式；
+3、HTML 标签的使用应该遵循标签的语义
+
+4、禁止为了 hook 脚本，创建无样式信息的 class，使用 id、属性选择作为 hook 是更好的方式；
 
 [更多HTML规范](http://segmentfault.com/a/1190000002465212)
 
@@ -18,8 +19,6 @@ standard of YAE frontend development
 作为构造函数的函数采用"大驼峰式命名法"，如：Person；
 
 3、每条语句必须使用分号结尾（特别是需要压缩的js，省略分号常常会导致压缩失败）；
-
-4、表示字符串用单引号或双引号均可， 建议统一使用双引号；
 
 5、始终使用===和!==，==和!=会做强制类型转换；
 
@@ -36,21 +35,34 @@ standard of YAE frontend development
 
 5、单个CSS文件避免过大（建议少于300行）
 
+6、通用的css文件可放于/3rd-lib/css目录下作为公用组件
+
 [更多css规范](http://segmentfault.com/a/1190000002460968)
 
-## gulp使用帮助：
-1、less编译、压缩和合并
+## mocha规范：
 
-2、代码语法检查
+## gulp规范:
 
-.jshintrc 文件配置了检查参数，jshint默认读取该文件，可以修改参数获得指定的测试结果
+### gulp使用帮助：
+1、尽量使用gulp完成自动化操作；
 
-更多参数-->[jshint参数](http://jshint.com/docs/options/)
+2、在完成各自开发任务的过程中，请配置自己的gulp任务，文件导入避免使用通配符，以避免影响其他人的开发文件
 
-3、代码测试
+### gulp任务帮助：
+1、less编译、压缩和合并，参见 task 'less'
+
+2、代码语法检查，参见 task 'jshint'
+
+目录中的.jshintrc 文件配置了检查参数，jshint默认读取该文件，可以修改参数以修改检查条件
+
+更多参数可见-->[jshint参数](http://jshint.com/docs/options/)
+
+3、代码测试，参见 task 'mocha'
 
 测试脚本统一目录为/test，文件名尽量与被测试文件同名
 
-4、js压缩
+4、js压缩，参见 task 'jsMinify'
 
 压缩后的文件名统一为/*.min.js或/*.min.js，生成路径统一为/build
+
+5、css压缩，参见 task 'cssMinify'
